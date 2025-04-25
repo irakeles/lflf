@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Приглашение на юбилей</title>
+  <style>
+    body {
+      background: #f8f0e3;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      text-align: center;
+    }
+    h1 {
+      color: #b85c38;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #444;
+      margin-bottom: 30px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 90%;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+    .buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .yes {
+      background-color: #4caf50;
+      color: white;
+    }
+    .yes:hover {
+      background-color: #45a049;
+    }
+    .no {
+      background-color: #f44336;
+      color: white;
+    }
+    .no:hover {
+      background-color: #e53935;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Приглашение на юбилей</h1>
+    <p>Дорогие друзья!<br>
+    Приглашаю вас на свой юбилей,который будет проходить 2 мая в 18:00 в ресторане Kozerog!.<br>
+    </p>
+
+    <!-- Здесь вы можете изменить текст приглашения -->
+
+    <form action="https://formspree.io/f/mjkwkbnw" method="POST">
+      <input type="text" name="Имя и Фамилия" placeholder="Введите имя и фамилию" required>
+
+      <div class="buttons">
+        <button class="yes" type="submit" name="Ответ" value="Я приду">Я приду</button>
+        <button class="no" type="submit" name="Ответ" value="Я не приду">Я не приду</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
